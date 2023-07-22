@@ -18,7 +18,7 @@ public class TaxApiService
     /// <summary>
     /// non-static
     /// </summary>
-    public TaxApiService NewInstance { get; set; } = new();
+    public static TaxApiService NewInstance => new();
     private TaxApiService()
     {
     }
