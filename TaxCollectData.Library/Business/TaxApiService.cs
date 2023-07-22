@@ -15,6 +15,10 @@ public class TaxApiService
     private IServiceProvider _serviceProvider;
     
     public static TaxApiService Instance { get; set; } = new();
+    /// <summary>
+    /// non-static
+    /// </summary>
+    public TaxApiService NewInstance { get; set; } = new();
     private TaxApiService()
     {
     }
